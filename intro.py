@@ -1,3 +1,40 @@
+#import math
+#binary-to-decimal converter
+
+evens = [(x, x**2, y, x*y)
+         for x in range(0, 20, 2)
+         for y in range(3,15, 3)
+         if x ==10]
+
+def sum(a,b):
+    return a +b
+
+a = sum(2,3)
+
+import math
+
+def volume(height,radius):
+    return (math.pi * radius**2 * height)
+
+print(volume(2,3))
+
+
+def bin2dec(binary):
+    binary = list(binary[::-1])
+    total = 0
+    for x in range(len(binary)):
+        print(binary[x])
+        total += int(binary[x]) * (2**x)
+
+
+
+    return total
+
+print(bin2dec('0101'))
+
+a = 4
+
+
 # comments in python use the pound sign
 # no need to put var before creating a variable
 # no need for semicolons at the end
@@ -194,13 +231,13 @@
 
 ####inclass#####
 
-age = 20
-gender = 'female'
+#age = 20
+#gender = 'female'
 
-if age>=21 and (gender == 'female' or gender =='male'):
-    print('go drink')
-else:
-    print('go drink anyway')
+#if age>=21 and (gender == 'female' or gender =='male'):
+    #print('go drink')
+#else:
+    #print('go drink anyway')
 
-for x in range(20, -50,-5):
-    print("{0} to the {1} power is {2}".format(x, 2, x**2))
+#for x in range(20, -50,-5):
+    #print("{0} to the {1} power is {2}".format(x, 2, x**2))
